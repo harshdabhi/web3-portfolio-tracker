@@ -3,4 +3,12 @@ from django.shortcuts import render
 # Create your views here.
 
 def homepage(request):
-    return render(request,'base.html')
+
+    
+
+    context={
+        'value':5000
+    }
+
+
+    return render(request,'homepage.html',context=context)

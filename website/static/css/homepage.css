@@ -1,0 +1,207 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+ }
+
+ :root {
+    --base_theme:rgba(84, 81, 81, 0.596);
+    --base-back:rgb(161, 161, 161);;
+
+ }
+
+
+html,body {
+    height: 100%;
+    width: 100%;
+    
+}
+.page1 {
+
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+}
+
+.page1 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    background-position: center;
+}
+
+.logo img{
+    position: absolute;
+    width: 8%;
+    height: 55%;
+    padding: 6px;
+    border-radius: 12px;
+    background-color: rgb(198, 220, 239);
+    margin-top: 0.8%;
+    margin-left: 0.5%;
+    border: 2px solid darkgray;
+
+}
+
+.page1 .logo :hover {
+
+    cursor: pointer;
+
+} 
+
+.top_nav_page1 {
+    background-color: rgba(0, 0, 0, 0.466);
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    
+}
+
+.body_page1 {
+    background-color: rgba(0, 0, 0, 0.403);
+    justify-content: space-between;
+    position: absolute;
+    margin-top: 8%;
+    width: 100%;
+    height: 80%;
+    display: flex;
+
+    
+}
+
+.wallet_address_input_page1 {
+    position: relative;
+    background-color: var(--base_theme);
+    margin: 12px;
+    height: 95%;
+    width: 20%;
+    border-radius: 10px;
+    padding: 10px;
+    
+
+
+}
+
+.wallet_address_input_page1 h1 {
+    justify-content: center;
+    display: flex;
+    padding: 2%;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--base-back);
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+}
+
+.wallet_address_input_page1 p {
+    background-color: var(--base-back);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap:0.8rem;
+    position: relative;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    align-items: left;
+    font-size: 20px;
+
+
+}
+
+#wallet_input {
+    padding: 10px;
+    width: 50%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-left: 25%;
+    
+
+}
+
+.portfolio_value_page1{
+    position: relative;
+    background-color: var(--base_theme);
+    margin: 12px;
+    height: 95%;
+    width: 45%;
+    padding: 10px;
+    border-radius: 10px; 
+
+}
+
+.portfolio_value_page1 h1 {
+    justify-content: center;
+    display: flex;
+    padding: 1%;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--base-back);
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+   
+
+}
+
+
+.table_page1 {
+    position: relative;
+    background-color: var(--base-back);
+    height: 72%;
+    border-radius: 10px;
+    overflow: scroll;
+    padding: 25px;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+.total_amount {
+    background-color: var(--base-back);
+    border-radius: 10px;
+    padding-left: 50px;
+    margin-bottom: 10px;
+
+
+}
+
+.latest_transaction_page1 {
+
+
+    position: relative;
+    background-color: var(--base_theme);
+    margin: 12px;
+    height: 95%;
+    width: 25%;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.latest_transaction_page1 h1 {
+
+    justify-content: center;
+    display: flex;
+    padding: 2%;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--base-back);
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+
+}
+
+.table_page1_transaction{
+    position: relative;
+    background-color: var(--base-back);
+    height: 82%;
+    border-radius: 10px;
+    overflow: scroll;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
