@@ -87,6 +87,9 @@ class eth_chain_portfolio_data:
         final_values.append(self.ETH_info(wallet_info))
 
         return final_values
+    
+    def __str__(self) -> str:
+        return "This class return eth based chain portfolio holding and its value "
 
 
 
