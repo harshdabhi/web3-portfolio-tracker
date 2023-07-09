@@ -5,6 +5,7 @@ Video demonstration
 
 
 
+
 Introduction:
 The web3 project aims to provide a comprehensive solution for retrieving wallet addresses and their latest transaction activities. By leveraging blockchain technology, this project offers users a reliable and transparent method to track their wallet holdings and monitor real-time transaction updates. With its user-friendly interface and advanced features, this project is set to revolutionize the way individuals manage their cryptocurrency assets.
 
@@ -28,17 +29,17 @@ In future updates, the web3 project aims to incorporate advanced analytics and r
 3. Improved User Interface:
 The project will focus on enhancing the user interface to provide a more intuitive and seamless experience. This includes improving navigation, incorporating user feedback, and optimizing the overall design for a more user-friendly interface.
 
-installation setup:
+Installation setup:
 
 step 1
 
-pip install .
+cmd: " pip install ."
 
 'This will install all dependency and make this suitable for system'
 
 step 2
 
-python manage.py runserver
+cmd:"python manage.py runserver"
 
 'This will fire up server on local host 127.0.0.1:8000/homepage'
 
