@@ -33,7 +33,7 @@ Installation setup:
 
 step 1
 
-cmd: " pip install ."
+cmd: " pip install -r requirements.txt"
 
 'This will install all dependency and make this suitable for system'
 
