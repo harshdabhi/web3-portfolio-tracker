@@ -39,11 +39,21 @@ cmd: " pip install ."
 
 step 2
 
+make a file name " config.ini" and add api key generated from https://ethplorer.io/
+
+add api in this config.ini file its look like shown below:
+'''
+[api_keys]
+eth:XX-7NX2M-XXVfXJS-XXXX
+'''
+
+step 3
+
 cmd:"python manage.py runserver"
 
 'This will fire up server on local host 127.0.0.1:8000/homepage'
 
-step 3
+step 4
 
 copy paste : " 127.0.0.1:8000/homepage  " on browser and system will begin to run!!!
 
