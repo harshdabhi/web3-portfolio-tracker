@@ -140,26 +140,34 @@
                     <h1>Latest transaction</h1>
 
                     <div class="table_page1_transaction">
-                        <table class="table">
-                            <thead>
+                    
+                      <table class="table">
+                          <thead>
                               <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
+                                  <th>Timestamp</th>
+                                  <th>Token Address</th>
+                                  <th>Symbol</th>
+                                  <th>Value</th>
+                                  <th>From</th>
+                                  <th>To</th>
                               </tr>
-                            </thead>
-                            <tbody>
+                          </thead>
+                          <tbody>
+                              {% for transaction in latest_transaction %}
                               <tr>
-                                <th scope="row">1</th>
-                                <td>fgsv</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
+                                  <td>{{ transaction.timestamp }}</td>
+                                  <td>{{ transaction.token_address }}</td>
+                                  <td>{{ transaction.symbol }}</td>
+                                  <td>{{ transaction.value }}</td>
+                                  <td>{{ transaction.from }}</td>
+                                  <td>{{ transaction.to }}</td>
                               </tr>
-                
-                            </tbody>
-                          </table>
-                        </div>  
+                              {% endfor %}
+                          </tbody>
+                      </table>
+
+
+                    </div>  
 
                     
                 </div>

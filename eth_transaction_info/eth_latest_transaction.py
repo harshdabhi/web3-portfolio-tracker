@@ -24,19 +24,24 @@ class eth_latest_transaction_info:
                 return None
             
             
-    def transaction_value(self,data):
-        data=c['operations']
-        final_value={
-            'timestamp':datetime.datetime.fromtimestamp(data['timestamp']).strftime('%Y-%m-%d %H:%M:%S'),
-            'token_address':data['tokenInfo']['address'],
-            'symbol':data['tokenInfo']['symbol'],
-            'price':data['tokenInfo']['price']['rate'],
-            'value':int(data['value'])/10**18,
-            'from':data['from'],
-            'to':data['to'],
+    def transaction_value(self,data_input):
+        data_value=data_input['operations']
+        final_list=[]
+        try:
+            for data in data_value:
+                final_value={
+                    'timestamp':datetime.datetime.fromtimestamp(data['timestamp']).strftime('%Y-%m-%d %H:%M:%S'),
+                    'token_address':data['tokenInfo']['address'],
+                    'symbol':data['tokenInfo']['symbol'],
+                    'value':int(data['value'])/10**18,
+                    'from':data['from'],
+                    'to':data['to'],
 
-            }
-        return data
+                    }
+                final_list.append(final_value)
+            return final_list
+        except Exception as e:
+            print(e)
     
     def __str__(self) -> str:
         return "This class return last 1000 transaction info of wallet address"
